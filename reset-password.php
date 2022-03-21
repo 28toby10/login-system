@@ -74,7 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wachtwoord opnieuw instellen</title>
+    <title>Wachtwoord veranderen</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body{ font: 14px sans-serif; }
@@ -83,8 +83,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="wrapper">
-        <h2>Wachtwoord opnieuw instellen</h2>
-        <p>Vul dit in om uw wachtwoord opnieuw in te stellen.</p>
+        <h2>Wachtwoord veranderen</h2>
+        <p>Vul dit in om uw wachtwoord te veranderen.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
             <div class="form-group">
                 <label>Nieuw Wachtwoord</label>
@@ -97,7 +97,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="submit" class="btn btn-primary" value="Verander wachtwoord">
                 <a class="btn btn-link ml-2" href="welcome.php">Annuleren</a>
             </div>
         </form>
