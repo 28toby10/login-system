@@ -148,7 +148,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Aanmelden">
                 <input type="reset" class="btn btn-secondary ml-2" value="Velden legen">
             </div>
-            <p>Heb je al een account? <a href="login.php">Login hier</a>.</p>
+            <p>Heb je al een account? <a href="login.php">Log in hier</a>.</p>
         </form>
     </div>    
 </body>
