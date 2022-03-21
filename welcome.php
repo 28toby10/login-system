@@ -22,7 +22,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <body>
     <h1 class="my-5">Hoi, <b><?php echo htmlspecialchars($_SESSION["email"]); ?></b>. Dit is het begin van de applicatie.</h1>
     <p>
-        <a href="reset-password.php" class="btn btn-warning">Stel je wachtwoord opnieuw in</a>
+        <a href="reset-password.php" class="btn btn-warning">Verander je wachtwoord</a>
         <a href="logout.php" class="btn btn-danger ml-3">Afmelden bij uw account</a>
     </p>
 </body>
