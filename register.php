@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate email
     if(empty(trim($_POST["email"]))){
         $email_err = "Voer een E-mail adres in.";
-    } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    } elseif(filter_var($email, FILTER_VALIDATE_EMAIL)){
         $email_err = "Voer een geldig E-mail adres in.";
     } else{
         // Prepare a select statement
