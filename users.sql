@@ -23,12 +23,11 @@
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) PRIMARY KEYAUTO_INCREMENT NOT NULL ,
   `username` varchar(50) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
 );
 
@@ -36,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Table structure for table `reset`
 --
 
-CREATE TABLE IF NOT EXISTS `reset` (
+CREATE TABLE IF NOT EXISTS `reset-password` (
 	`id` INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	`email` varchar(50) NOT NULL,
 	`selector` varchar(50) NOT NULL,
