@@ -26,12 +26,11 @@ USE `login-system`;
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) PRIMARY KEYAUTO_INCREMENT NOT NULL ,
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
-  `email` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL UNIQUE,
   `password` varchar(255) NOT NULL,
-  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  UNIQUE KEY `email` (`email`)
+  `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
 );
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
