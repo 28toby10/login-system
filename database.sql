@@ -18,9 +18,6 @@
 
 -- --------------------------------------------------------
 
---
--- Create's database and uses it
---
 CREATE DATABASE IF NOT EXISTS `login-system` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `login-system`;
 
