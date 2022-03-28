@@ -19,6 +19,12 @@
 -- --------------------------------------------------------
 
 --
+-- Create's database and uses it
+--
+CREATE DATABASE IF NOT EXISTS `login-system` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `login-system`;
+
+--
 -- Table structure for table `users`
 --
 
@@ -29,18 +35,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(255) NOT NULL,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   UNIQUE KEY `email` (`email`)
-);
-
---
--- Table structure for table `reset`
---
-
-CREATE TABLE IF NOT EXISTS `reset-password` (
-	`id` INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
-	`email` varchar(50) NOT NULL,
-	`selector` varchar(50) NOT NULL,
-	`token` varchar(255) NOT NULL,
-	`expires` varchar(50) NOT NULL
 );
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
