@@ -30,7 +30,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) NOT NULL,
   `email` varchar(255) NOT NULL UNIQUE,
   `password` varchar(255) NOT NULL,
-  `role` varchar(50) NOT NULL DEFAULT 'guest', 
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP
 );
 
