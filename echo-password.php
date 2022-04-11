@@ -52,7 +52,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         <?php 
         if(!empty($param_password)){
-            echo '<div class="alert alert-danger">' . $param_password . '</div>';
+            echo "<div class='form-group'><span class='alert alert-danger'>" . $param_password . "<span> </div>";
         }        
         ?>
 
