@@ -70,7 +70,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Creër">
             </div>
-            <p>Heb je al een account? <a href="login.php">Log in hier</a>.</p>
         </form>
     </div>    
 </body>
